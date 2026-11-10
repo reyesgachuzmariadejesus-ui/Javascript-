@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1 = Number(prompt('Escribe el primer numero'));
+        let n2 = Number(prompt('Escribe el segundo numero'));
+
+        let opcion = Number(prompt('Elige una operacion:\n1. Suma\n2. Resta\n3. Multiplicacion\n4. Division'));
+
+    switch (opcion) {
+        case 1:
+            document.write("La suma es: "+ suma + (n1 + n2));
+            break;
+
+        case 2:
+            document.write("La resta es: "+ resta + (n1 - n2));
+            break;
+
+        case 3:
+            document.write("La multiplicacion es: "+ multiplicacion + (n1 * n2));
+            break;
+
+        case 4:
+            if (n2 != 0) {
+                document.write("La division es: " + division + (n1 / n2));
+            } else {
+                document.write("No se puede dividir entre cero");
+            }
+            break;
+
+        default:
+            document.write("Opcion no valida");
+            break;
+    }
+    </script>
+</body>
+</html>

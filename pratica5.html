@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const continuar = confirm('¿Deseas registrar tus datos?');
+
+    if (continuar) {
+        let nombre = prompt('Escribe tu nombre');
+        let espe = prompt('Escribe la especialidad');
+        let edad = Number(prompt('Escribe tu edad'));
+        
+        document.write("Tu nombre es: " + nombre + "<br>");
+        document.write("Tu especialidad es: " + espe + "<br>");
+        document.write("Edad: " + edad);
+    } else {
+        alert('Tengo flojera');
+    }
+    </script>
+</body>
+</html>
